@@ -1,6 +1,6 @@
-# 🧠 Frontend Interview Prep Hub (React Edition)
+# 🧠 Frontend Interview Prep Hub
 
-Compiled by Akshay (with study demands enforced by Devi). A desperate as well as honest attempt to conquer frontend software engineering interviews. 
+Compiled by Akshay. A desperate as well as honest attempt to conquer frontend software engineering interviews. 
 
 Initially built in pure Vanilla JS with manual DOM manipulation, this project has been fully refactored into a modern, state-driven React application. 
 
@@ -19,3 +19,4 @@ Because relying on browser memory is for goldfish. This application allows me to
 2. Run `npm install` to grab the dependencies.
 3. Run `npm run dev` to spin up the local Vite server.
 4. Open the localhost link in your browser and start studying.
+
