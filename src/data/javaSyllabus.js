@@ -1,0 +1,22 @@
+export const javaSyllabus = [
+  { id: 1, topic: "Java Basics", mustKnow: "Variables, data types, operators, input/output, type casting" },
+  { id: 2, topic: "Control Flow", mustKnow: "if-else, switch, loops, break, continue" },
+  { id: 3, topic: "Methods", mustKnow: "Parameters, return types, method overloading" },
+  { id: 4, topic: "Arrays", mustKnow: "1D, 2D arrays, traversal, common operations" },
+  { id: 5, topic: "Strings", mustKnow: "String vs StringBuilder vs StringBuffer, common methods, immutability" },
+  { id: 6, topic: "Object-Oriented Programming (OOP)", mustKnow: "Class, object, constructor, encapsulation, inheritance, polymorphism, abstraction" },
+  { id: 7, topic: "Interfaces & Abstract Classes", mustKnow: "Differences, multiple inheritance via interfaces" },
+  { id: 8, topic: "Collections Framework", mustKnow: "List, Set, Queue, Map, ArrayList, LinkedList, HashSet, HashMap, PriorityQueue" },
+  { id: 9, topic: "Exception Handling", mustKnow: "try-catch-finally, throw, throws, custom exceptions" },
+  { id: 10, topic: "Generics", mustKnow: "Generic classes, methods, wildcards (basic understanding)" },
+  { id: 11, topic: "Access Modifiers", mustKnow: "public, private, protected, default" },
+  { id: 12, topic: "Static & Final", mustKnow: "static variables/methods, final keyword, static blocks" },
+  { id: 13, topic: "Java Memory Model", mustKnow: "Stack vs Heap, object creation, garbage collection basics" },
+  { id: 14, topic: "Multithreading", mustKnow: "Thread, Runnable, synchronization, thread lifecycle, Executor basics" },
+  { id: 15, topic: "Java 8 Features", mustKnow: "Lambda expressions, functional interfaces, Stream API, Optional" },
+  { id: 16, topic: "File Handling", mustKnow: "File, FileReader, BufferedReader, FileWriter, serialization basics" },
+  { id: 17, topic: "Comparable & Comparator", mustKnow: "Sorting custom objects" },
+  { id: 18, topic: "equals() & hashCode()", mustKnow: "Contract, importance in HashMap/HashSet" },
+  { id: 19, topic: "Wrapper Classes & Autoboxing", mustKnow: "Integer, Double, boxing/unboxing" },
+  { id: 20, topic: "JVM, JRE & JDK", mustKnow: "Differences, compilation and execution process" }
+];
