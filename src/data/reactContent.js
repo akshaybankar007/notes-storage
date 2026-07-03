@@ -275,7 +275,7 @@ const handleGoodClick = () => setCount(prevCount => prevCount + 1);`
       }
     ]
   },
-  15: {
+15: {
     title: "Props Drilling",
     sections: [
       {
@@ -285,8 +285,10 @@ const handleGoodClick = () => setCount(prevCount => prevCount + 1);`
       {
         heading: "The Symptoms",
         text: "Code becomes brittle and hard to refactor. If you rename a prop, you must change it in 5 different files. The solution to props drilling is either React Context API (`useContext`) or state management libraries like Redux."
-      },
-      16: {
+      }
+    ]
+  },
+  16: {
     title: "Context API & useContext",
     sections: [
       {
