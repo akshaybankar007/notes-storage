@@ -5,7 +5,7 @@ export default function MainLayout() {
   return (
     <div className="layout-container">
       <header className="app-header">
-        <h1>DevPrep Hub</h1>
+        <h1>StackPrep</h1>
         <p>Software Engineer & MERN Stack Readiness</p>
       </header>
 

@@ -33,7 +33,7 @@ export default function ModulePage() {
               {isCompleted(item.id) && <span className="checkmark" title="Completed">✓</span>}
             </div>
             <div className="topic-body">
-              <strong>Must Know:</strong>
+              <strong>Konw this:</strong>
               <p>{item.mustKnow}</p>
             </div>
             <Link
@@ -41,7 +41,7 @@ export default function ModulePage() {
               className="read-btn"
               style={{ textAlign: 'center', textDecoration: 'none', display: 'block' }}
             >
-              Read Tutorial
+              Read
             </Link>
           </article>
         ))}
