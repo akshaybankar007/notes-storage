@@ -11,9 +11,12 @@
 }
 
 body {
-  background-color: var(--bg-main);
+background-color: var(--bg-main);
   color: var(--text-main);
-  font-family: sans-serif;
+  /* Modern system font stack and anti-aliasing for crisp text */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Layout */
@@ -146,7 +149,35 @@ body {
 /* Mobile */
 @media (max-width: 768px) {
   .content-wrapper { flex-direction: column; }
-  .sidebar { width: 100%; border-right: none; border-bottom: 1px solid var(--border-color); }
+  
+  .sidebar { 
+    width: 100%; 
+    border-right: none; 
+    border-bottom: 1px solid var(--border-color); 
+    padding: 15px 20px;
+  }
+  
+  /* Hide the "MODULES" header to save vertical space */
+  .sidebar h3 { display: none; }
+  
+  /* Convert vertical links to a horizontal scrollable row */
+  .sidebar nav {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 5px;
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+  }
+  
+  /* Hide scrollbar Chrome/Safari for cleaner look */
+  .sidebar nav::-webkit-scrollbar { display: none; }
+  
+  .nav-link { 
+    margin-bottom: 0; 
+    white-space: nowrap; /* Prevent text wrapping */
+    flex-shrink: 0; 
+  }
+  
   .main-content { padding: 15px; }
 }
 
