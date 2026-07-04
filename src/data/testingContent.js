@@ -1,15 +1,14 @@
-// testingContent.js
 export const testingContent = {
   "1": {
-    title: "What is Testing? (Why do we need it?)",
+    title: "What is Software Testing and why is it important?",
     sections: [
       {
-        heading: "Benefits",
-        text: "Reduces costs, increases confidence in refactoring, documents expected behavior, and catches regression."
+        heading: "Definition",
+        text: "Software testing is the process of verifying that software behaves as expected, identifying defects, and ensuring quality[reference:107][reference:108]."
       },
       {
-        heading: "Types",
-        text: "Manual vs automated testing. Automated tests run repeatedly and are reliable."
+        heading: "Why It Matters",
+        text: "Testing reduces costs by catching bugs early, increases confidence in refactoring, documents expected behavior, and prevents regression[reference:109]."
       }
     ]
   },
@@ -18,139 +17,143 @@ export const testingContent = {
     sections: [
       {
         heading: "Unit Testing",
-        text: "Tests individual components (functions, classes) in isolation. Fast, easy to write."
+        text: "Tests individual components (functions, classes) in isolation. Fast and easy to write[reference:110]."
       },
       {
         heading: "Integration Testing",
-        text: "Tests interactions between modules, databases, or APIs. Verifies that units work together."
+        text: "Tests interactions between modules, databases, or APIs. Verifies that units work together correctly[reference:111]."
       },
       {
         heading: "End-to-End Testing",
-        text: "Tests the entire application flow from user perspective (e.g., with Cypress). Slowest but ensures system works."
+        text: "Tests the entire application flow from the user's perspective (e.g., with Cypress). Slowest but ensures the whole system works[reference:112]."
       }
     ]
   },
   "3": {
-    title: "Jest Basics (Installation, Matchers, Assertions)",
+    title: "What is the difference between Verification and Validation?",
     sections: [
       {
-        heading: "Installation",
-        text: "`npm install --save-dev jest` and configure scripts in package.json."
+        heading: "Verification",
+        text: "Are we building the product right? Checks if the software meets specifications and requirements. Static process — reviews, inspections, walkthroughs[reference:113]."
       },
       {
-        heading: "Matchers",
-        text: "`expect(value).toBe(expected)`, `toEqual` (deep equality), `toBeTruthy()`, `toThrow()`, and more."
-      },
-      {
-        heading: "Assertions",
-        text: "Jest uses `expect` for assertions. Tests fail if expectations are not met."
+        heading: "Validation",
+        text: "Are we building the right product? Checks if the software meets the user's actual needs. Dynamic process — testing the actual software[reference:114]."
       }
     ]
   },
   "4": {
-    title: "Test Suites and Test Cases",
+    title: "What are the different types of testing?",
     sections: [
       {
-        heading: "describe",
-        text: "Creates a block for a set of tests. Useful for organization."
+        heading: "Functional Testing",
+        text: "Tests what the system does — unit, integration, system, acceptance testing[reference:115][reference:116]."
       },
       {
-        heading: "test / it",
-        text: "Individual test case. `test('should...', () => { ... })` or `it('...')`."
+        heading: "Non-Functional Testing",
+        text: "Tests how the system performs — performance, load, stress, security, usability testing[reference:117][reference:118]."
+      },
+      {
+        heading: "Manual vs Automated",
+        text: "Manual testing is executed by humans. Automated testing uses scripts and tools — faster, repeatable, and more reliable[reference:119]."
       }
     ]
   },
   "5": {
-    title: "Mock Functions and Mocking",
+    title: "What is a Test Case? What goes into a good test case?",
     sections: [
       {
-        heading: "jest.fn()",
-        text: "Creates a mock function. Can track calls and return values."
+        heading: "Definition",
+        text: "A test case is a set of conditions or variables under which a tester determines if a system works correctly[reference:120]."
       },
       {
-        heading: "mockImplementation",
-        text: "Overrides the mock's behavior: `mockImplementation(() => 'mocked')`."
+        heading: "Components",
+        text: "Test case ID, description, preconditions, test steps, expected result, actual result, and status (pass/fail)[reference:121]."
       },
       {
-        heading: "spyOn",
-        text: "Wraps an existing method to track calls."
+        heading: "Characteristics of a Good Test Case",
+        text: "Clear, concise, repeatable, traceable to requirements, and independent[reference:122]."
       }
     ]
   },
   "6": {
-    title: "Asynchronous Testing",
+    title: "What is Jest and how do you write tests with it?",
     sections: [
       {
-        heading: "Promises",
-        text: "Return a promise from the test. Jest waits for it to resolve or reject."
+        heading: "Jest Basics",
+        text: "Jest is a JavaScript testing framework. Install with `npm install --save-dev jest`. Configure test scripts in `package.json`[reference:123]."
       },
       {
-        heading: "Async/Await",
-        text: "Use `async` in the test function and `await` on promises. Jest handles it."
+        heading: "Matchers",
+        text: "`expect(value).toBe(expected)` — strict equality. `toEqual()` — deep equality. `toBeTruthy()`, `toThrow()`, and more[reference:124]."
       },
       {
-        heading: "done() callback",
-        text: "Alternative for older callback-style async, but less common."
+        heading: "Test Structure",
+        text: "`describe()` groups related tests. `test()` or `it()` defines individual test cases. Assertions use `expect()`[reference:125]."
       }
     ]
   },
   "7": {
-    title: "React Testing Library (RTL) Basics",
+    title: "What is mocking in testing and why is it useful?",
     sections: [
       {
-        heading: "Setup",
-        text: "Install `@testing-library/react` and `@testing-library/jest-dom` for custom matchers."
+        heading: "Mock Functions",
+        text: "`jest.fn()` creates a mock function that tracks calls and return values. `mockImplementation()` overrides behavior[reference:126]."
       },
       {
-        heading: "Queries",
-        text: "`screen.getByText()`, `getByRole()`, `getByLabelText()` etc. Prefer queries that reflect accessibility."
+        heading: "Why Mock?",
+        text: "Isolate the unit being tested by replacing dependencies (APIs, databases, complex modules) with controlled mocks. Tests become faster, more reliable, and independent[reference:127]."
       },
       {
-        heading: "render",
-        text: "`render(<Component />)` to render the component for testing."
+        heading: "spyOn",
+        text: "`jest.spyOn(object, 'method')` wraps an existing method to track calls without replacing its implementation[reference:128]."
       }
     ]
   },
   "8": {
-    title: "Testing User Interactions",
+    title: "How do you test asynchronous code?",
     sections: [
       {
-        heading: "fireEvent",
-        text: "Synchronous events: `fireEvent.click(button)`, `fireEvent.change(input, {target: {value: 'text'}})`."
+        heading: "Promises",
+        text: "Return a promise from the test — Jest waits for it to resolve or reject[reference:129]."
       },
       {
-        heading: "userEvent",
-        text: "More realistic, async events (from `@testing-library/user-event`). Prefer over fireEvent for interactions."
+        heading: "Async/Await",
+        text: "Use `async` in the test function and `await` on promises. Jest handles it automatically[reference:130]."
+      },
+      {
+        heading: "done() Callback",
+        text: "An older alternative for callback-style async code. Call `done()` when the async operation completes[reference:131]."
       }
     ]
   },
   "9": {
-    title: "Mocking API Calls and Components",
+    title: "What is React Testing Library and how is it different from Enzyme?",
     sections: [
       {
-        heading: "Mocking API calls",
-        text: "Use `jest.spyOn` on fetch/axios, or mock the module with `jest.mock('axios')`."
+        heading: "React Testing Library (RTL)",
+        text: "RTL focuses on testing components as users interact with them. Queries like `getByText()`, `getByRole()`, `getByLabelText()` reflect accessibility[reference:132]."
       },
       {
-        heading: "Mocking Components",
-        text: "Use `jest.mock('path/to/Component')` to replace with a simple stub."
+        heading: "RTL vs Enzyme",
+        text: "RTL tests behavior, not implementation details. Enzyme allows testing internal component state and methods. RTL is now the recommended approach by the React team[reference:133]."
       }
     ]
   },
   "10": {
-    title: "Best Practices",
+    title: "What are best practices for writing tests?",
     sections: [
       {
         heading: "AAA Pattern",
-        text: "Arrange (setup), Act (perform action), Assert (verify outcome). Keeps tests structured."
+        text: "Arrange — set up test data and conditions. Act — perform the action being tested. Assert — verify the outcome. Keeps tests structured and readable[reference:134]."
       },
       {
         heading: "Test Coverage",
-        text: "Aim for high coverage, but prioritize critical paths. Use `--coverage` flag."
+        text: "Aim for high coverage but prioritize critical paths. Use `--coverage` flag to see which code is untested[reference:135]."
       },
       {
-        heading: "Avoid Testing Implementation Details",
-        text: "Test behavior, not private methods. RTL encourages this by focusing on rendered output."
+        heading: "Don't Test Implementation",
+        text: "Test behavior, not private methods or internal state. This makes tests more resilient to refactoring[reference:136]."
       }
     ]
   }

@@ -1,10 +1,10 @@
 export const systemSyllabus = [
-  { id: 1, topic: "Stateful vs Stateless Systems", mustKnow: "Server memory vs Client-provided state" },
-  { id: 2, topic: "Horizontal vs Vertical Scaling", mustKnow: "Adding more machines vs Upgrading one machine" },
-  { id: 3, topic: "Load Balancers", mustKnow: "Distributing traffic, Round Robin, Reverse Proxies" },
-  { id: 4, topic: "Caching Strategies", mustKnow: "Redis, Cache-aside, TTL, Cache Eviction" },
-  { id: 5, topic: "Content Delivery Networks (CDN)", mustKnow: "Edge servers, reducing latency for static assets" },
-  { id: 6, topic: "CAP Theorem", mustKnow: "Consistency, Availability, Partition Tolerance trade-offs" },
-  { id: 7, topic: "Monolithic vs Microservices", mustKnow: "Single codebase vs Independent deployable services" },
-  { id: 8, topic: "Message Queues", mustKnow: "RabbitMQ, Kafka, Decoupling services, Async processing" }
+  { id: 1, topic: "What is the CAP Theorem?", mustKnow: "Consistency, Availability, Partition Tolerance — choose two" },
+  { id: 2, topic: "Horizontal vs Vertical Scaling — what's the difference?", mustKnow: "Adding more machines vs upgrading one machine" },
+  { id: 3, topic: "What is a Load Balancer and why is it important?", mustKnow: "Traffic distribution, algorithms, reverse proxy" },
+  { id: 4, topic: "What are different caching strategies?", mustKnow: "Cache-aside, TTL, eviction policies, Redis" },
+  { id: 5, topic: "What is a CDN and how does it improve performance?", mustKnow: "Edge servers, static assets, reduced latency" },
+  { id: 6, topic: "Stateful vs Stateless — which one scales better?", mustKnow: "Server memory vs client-provided state" },
+  { id: 7, topic: "Monolithic vs Microservices — pros and cons?", mustKnow: "Single codebase vs independent deployable services" },
+  { id: 8, topic: "What are Message Queues and when do you use them?", mustKnow: "RabbitMQ, Kafka, async processing, decoupling" }
 ];

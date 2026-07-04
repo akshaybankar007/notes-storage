@@ -1,88 +1,18 @@
-// dbmsSyllabus.js
 export const dbmsSyllabus = [
-  {
-    id: 1,
-    topic: "Database Architecture",
-    content: "Three-tier architecture, schemas, and instances."
-  },
-  {
-    id: 2,
-    topic: "Entity-Relationship Model",
-    content: "Entities, attributes, relationships, and ER diagrams."
-  },
-  {
-    id: 3,
-    topic: "Relational Model",
-    content: "Tables, tuples, keys, and integrity constraints."
-  },
-  {
-    id: 4,
-    topic: "SQL Basics",
-    content: "DDL, DML, DCL, and TCL commands."
-  },
-  {
-    id: 5,
-    topic: "Normalization",
-    content: "1NF, 2NF, 3NF, BCNF, and decomposition."
-  },
-  {
-    id: 6,
-    topic: "Indexing and Hashing",
-    content: "B-trees, hash indexing, and performance."
-  },
-  {
-    id: 7,
-    topic: "Transactions and ACID",
-    content: "Atomicity, Consistency, Isolation, Durability."
-  },
-  {
-    id: 8,
-    topic: "Concurrency Control",
-    content: "Locking, timestamp ordering, and MVCC."
-  },
-  {
-    id: 9,
-    topic: "Recovery and Backup",
-    content: "Logging, checkpoints, and restore techniques."
-  },
-  {
-    id: 10,
-    topic: "Query Optimization",
-    content: "Query trees, heuristics, and cost-based optimization."
-  },
-  {
-    id: 11,
-    topic: "Joins and Set Operations",
-    content: "INNER, OUTER joins, UNION, INTERSECT."
-  },
-  {
-    id: 12,
-    topic: "Subqueries and Views",
-    content: "Nested queries, correlated subqueries, and views."
-  },
-  {
-    id: 13,
-    topic: "Database Security",
-    content: "Privileges, roles, and encryption."
-  },
-  {
-    id: 14,
-    topic: "NoSQL Databases",
-    content: "Document, key-value, column, and graph stores."
-  },
-  {
-    id: 15,
-    topic: "Distributed Databases",
-    content: "Fragmentation, replication, and CAP theorem."
-  },
-  {
-    id: 16,
-    topic: "Object-Relational Mapping (ORM)",
-    content: "Mapping objects to relational tables."
-  },
-  {
-    id: 17,
-    topic: "Database Testing and Performance",
-    content: "Explain plans, profiling, and tuning."
-  }
+  { id: 1, topic: "What is the difference between DBMS and RDBMS?", content: "DBMS vs RDBMS" },
+  { id: 2, topic: "What is a primary key? What is a foreign key?", content: "Primary key, foreign key, referential integrity" },
+  { id: 3, topic: "What is normalization?", content: "Data organization, redundancy reduction, anomalies" },
+  { id: 4, topic: "Explain 1NF, 2NF, and 3NF.", content: "Atomic values, full functional dependency, transitive dependency" },
+  { id: 5, topic: "What are anomalies in DBMS?", content: "Insertion, deletion, update anomalies" },
+  { id: 6, topic: "What is functional dependency?", content: "Attribute dependency" },
+  { id: 7, topic: "What are joins? Explain types of joins.", content: "INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN" },
+  { id: 8, topic: "Difference between INNER JOIN and LEFT JOIN.", content: "Matching rows vs all rows from left table" },
+  { id: 9, topic: "What is indexing? How does it improve performance?", content: "Data structure, B-tree, fast retrieval" },
+  { id: 10, topic: "What is the difference between clustered and non-clustered index?", content: "Physical order vs separate structure" },
+  { id: 11, topic: "What is a transaction?", content: "Logical unit of work" },
+  { id: 12, topic: "Explain ACID properties.", content: "Atomicity, Consistency, Isolation, Durability" },
+  { id: 13, topic: "What are isolation levels?", content: "Read Uncommitted, Read Committed, Repeatable Read, Serializable" },
+  { id: 14, topic: "What is dirty read, non-repeatable read, and phantom read?", content: "Transaction anomalies" },
+  { id: 15, topic: "What is the difference between DELETE, TRUNCATE, and DROP?", content: "Row removal, table clearing, table deletion" },
+  { id: 16, topic: "What is a view?", content: "Virtual table" }
 ];

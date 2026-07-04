@@ -1,88 +1,12 @@
-// cnSyllabus.js
 export const cnSyllabus = [
-  {
-    id: 1,
-    topic: "OSI Model",
-    content: "Seven-layer architecture for network communication."
-  },
-  {
-    id: 2,
-    topic: "TCP/IP Model",
-    content: "Four-layer Internet protocol suite overview."
-  },
-  {
-    id: 3,
-    topic: "IP Addressing and Subnetting",
-    content: "IPv4, IPv6, subnet masks, and CIDR."
-  },
-  {
-    id: 4,
-    topic: "Domain Name System (DNS)",
-    content: "Resolves domain names to IP addresses."
-  },
-  {
-    id: 5,
-    topic: "HTTP and HTTPS",
-    content: "Application layer protocols for web browsing."
-  },
-  {
-    id: 6,
-    topic: "TCP vs UDP",
-    content: "Connection-oriented vs. connectionless transport."
-  },
-  {
-    id: 7,
-    topic: "Routing Algorithms",
-    content: "RIP, OSPF, BGP and path selection."
-  },
-  {
-    id: 8,
-    topic: "Ethernet and MAC Addresses",
-    content: "Data link layer addressing and frame formats."
-  },
-  {
-    id: 9,
-    topic: "Switching Techniques",
-    content: "Circuit, packet, and message switching."
-  },
-  {
-    id: 10,
-    topic: "Network Security Basics",
-    content: "Firewalls, VPNs, SSL/TLS, and encryption."
-  },
-  {
-    id: 11,
-    topic: "Network Layer Protocols",
-    content: "ICMP, ARP, RARP, and IP forwarding."
-  },
-  {
-    id: 12,
-    topic: "Transport Layer Features",
-    content: "Flow control, congestion control, and reliability."
-  },
-  {
-    id: 13,
-    topic: "Application Layer Protocols",
-    content: "FTP, SMTP, DHCP, Telnet, and SNMP."
-  },
-  {
-    id: 14,
-    topic: "Wireless Networking",
-    content: "Wi-Fi standards, Bluetooth, and mobile networks."
-  },
-  {
-    id: 15,
-    topic: "Network Address Translation (NAT)",
-    content: "Maps private IPs to public IPs for internet access."
-  },
-  {
-    id: 16,
-    topic: "Quality of Service (QoS)",
-    content: "Traffic prioritization and bandwidth management."
-  },
-  {
-    id: 17,
-    topic: "Error Detection and Correction",
-    content: "CRC, checksums, and parity bits."
-  }
+  { id: 1, topic: "What is the OSI model? Explain its 7 layers.", content: "Seven-layer architecture for network communication" },
+  { id: 2, topic: "What is the TCP/IP model? How is it different from OSI?", content: "Four-layer Internet protocol suite" },
+  { id: 3, topic: "What is the difference between TCP and UDP?", content: "Connection-oriented vs connectionless" },
+  { id: 4, topic: "What is a three-way handshake in TCP?", content: "SYN, SYN-ACK, ACK" },
+  { id: 5, topic: "What is IP addressing? What is the difference between IPv4 and IPv6?", content: "32-bit vs 128-bit addressing" },
+  { id: 6, topic: "What is DNS? How does it work?", content: "Domain name to IP resolution" },
+  { id: 7, topic: "What is the difference between HTTP and HTTPS?", content: "Encrypted vs unencrypted communication" },
+  { id: 8, topic: "What is the difference between a switch and a router?", content: "Data Link layer vs Network layer" },
+  { id: 9, topic: "What is ARP?", content: "IP to MAC address mapping" },
+  { id: 10, topic: "What is the difference between hub, switch, and router?", content: "Broadcast, forward, route" }
 ];

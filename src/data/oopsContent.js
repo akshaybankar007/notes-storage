@@ -4,16 +4,24 @@ export const oopsContent = {
     title: "Classes and Objects",
     sections: [
       {
+        heading: "Definition",
+        text: "A class is a blueprint for creating objects. Defines properties (attributes) and behaviors (methods). An object is an instance of a class."
+      },
+      {
         heading: "Class Definition",
-        text: "In Java, a class is defined with `class` keyword. It can have fields, constructors, and methods. Example: `public class Car { String model; void start() { ... } }`."
+        text: "Java: `class` keyword. Example: `public class Car { String model; void start() { ... } }`."
       },
       {
         heading: "Creating Objects",
-        text: "Objects are instantiated with `new` keyword. `Car myCar = new Car();` The constructor initializes the object."
+        text: "Objects instantiated with `new`. `Car myCar = new Car();` Constructor initializes object."
       },
       {
         heading: "Fields and Methods",
-        text: "Fields store state; methods define behavior. Access via dot notation: `myCar.model = 'Tesla'; myCar.start();`."
+        text: "Fields store state; methods define behavior. Access via dot notation: `myCar.model = 'Tesla'; myCar.start();`"
+      },
+      {
+        heading: "this Keyword",
+        text: "Refers to current object."
       }
     ]
   },
@@ -21,12 +29,12 @@ export const oopsContent = {
     title: "Encapsulation",
     sections: [
       {
-        heading: "Access Control",
-        text: "Private fields prevent direct access. Public getters/setters expose controlled access. This allows validation and logging."
+        heading: "Definition",
+        text: "Bundles data and methods, hiding internal details and protecting data integrity."
       },
       {
-        heading: "Benefits",
-        text: "Reduces complexity, increases reusability, and protects data from unintended modification. Changes to internal implementation don't affect external code."
+        heading: "Access Control",
+        text: "Private fields prevent direct access. Public getters/setters expose controlled access. Allows validation and logging."
       },
       {
         heading: "Example",
@@ -38,20 +46,28 @@ export const oopsContent = {
     title: "Inheritance",
     sections: [
       {
-        heading: "Inheritance Syntax",
-        text: "Java: `class Subclass extends Superclass`. C++: `class Subclass : public Superclass`. Python: `class Subclass(Superclass):`."
+        heading: "Definition",
+        text: "Subclass acquires properties and behavior of superclass. Promotes code reuse."
       },
       {
-        heading: "Types of Inheritance",
-        text: "Single (one parent), multiple (multiple parents - not in Java/C#), multilevel (grandparent), hierarchical (one parent, many children)."
+        heading: "Syntax",
+        text: "Java: `class Subclass extends Superclass`. C++: `class Subclass : public Superclass`. Python: `class Subclass(Superclass):`"
+      },
+      {
+        heading: "Types",
+        text: "Single (one parent), Multiple (multiple parents - not in Java/C#), Multilevel, Hierarchical."
       },
       {
         heading: "Method Overriding",
-        text: "Subclasses can provide specific implementation of superclass methods. Use `@Override` annotation in Java."
+        text: "Subclass provides specific implementation. Use `@Override` annotation in Java."
       },
       {
         heading: "Constructor Chaining",
-        text: "Subclass constructor must call superclass constructor (using `super()` in Java) to initialize inherited fields."
+        text: "Subclass constructor calls superclass constructor using `super()`."
+      },
+      {
+        heading: "IS-A Relationship",
+        text: "Inheritance creates IS-A relationship. Favor composition over inheritance when possible."
       }
     ]
   },
@@ -60,15 +76,19 @@ export const oopsContent = {
     sections: [
       {
         heading: "Compile-time Polymorphism (Overloading)",
-        text: "Multiple methods with same name but different parameters. Resolved at compile time. Example: `add(int a, int b)` and `add(double a, double b)`."
+        text: "Multiple methods with same name, different parameters. Resolved at compile time. Example: `add(int a, int b)` and `add(double a, double b)`."
       },
       {
         heading: "Runtime Polymorphism (Overriding)",
-        text: "Subclass provides specific implementation. The actual method called is determined at runtime based on object type, not reference type."
+        text: "Subclass provides specific implementation. Method called determined at runtime based on object type, not reference type."
       },
       {
         heading: "Polymorphism via Interfaces",
-        text: "Objects of different classes implementing the same interface can be treated uniformly. Example: `List list = new ArrayList();`"
+        text: "Objects of different classes implementing the same interface treated uniformly. Example: `List list = new ArrayList();`"
+      },
+      {
+        heading: "Dynamic Binding",
+        text: "Used for overridden methods."
       }
     ]
   },
@@ -77,15 +97,15 @@ export const oopsContent = {
     sections: [
       {
         heading: "Abstract Classes",
-        text: "Abstract classes cannot be instantiated; they may contain abstract (unimplemented) methods. Subclasses must implement them. Example: `abstract class Animal { abstract void sound(); }`."
+        text: "Cannot be instantiated. May contain abstract (unimplemented) methods. Subclasses must implement them. Example: `abstract class Animal { abstract void sound(); }`."
       },
       {
         heading: "Interfaces",
-        text: "Interfaces define a contract of methods that implementing classes must provide. They allow multiple inheritance of type. Example: `interface Flyable { void fly(); }`."
+        text: "Define contract of methods implementing classes must provide. Allow multiple inheritance of type. Example: `interface Flyable { void fly(); }`."
       },
       {
-        heading: "Differences: Abstract Class vs Interface",
-        text: "Abstract classes can have state (fields) and concrete methods; interfaces (before Java 8) only abstract methods. Since Java 8, interfaces have default methods."
+        heading: "Abstract Class vs Interface",
+        text: "Abstract classes can have state and concrete methods. Interfaces (before Java 8) only abstract methods. Since Java 8, interfaces have default methods."
       }
     ]
   },
@@ -102,11 +122,11 @@ export const oopsContent = {
       },
       {
         heading: "Destructors (Finalizers)",
-        text: "In C++: destructors (~Class) are deterministic. In Java: finalize() is deprecated; use try-with-resources or AutoCloseable. In Python: __del__."
+        text: "C++: destructors (~Class) deterministic. Java: finalize() deprecated; use try-with-resources or AutoCloseable. Python: __del__."
       },
       {
         heading: "Garbage Collection",
-        text: "Languages like Java, C#, Python manage memory automatically. Garbage collector reclaims memory of unreferenced objects; finalizers are called before collection."
+        text: "Java, C#, Python manage memory automatically. Garbage collector reclaims memory of unreferenced objects."
       }
     ]
   },
@@ -115,19 +135,19 @@ export const oopsContent = {
     sections: [
       {
         heading: "Static Variables",
-        text: "Also called class variables. They hold values that are common to all instances. Example: `static int count` to track number of objects."
+        text: "Class variables shared across all instances. Example: `static int count` to track number of objects."
       },
       {
         heading: "Static Methods",
-        text: "Can be called without an instance. They can only access static members. Used for utility functions (e.g., Math.sqrt())."
+        text: "Can be called without instance. Only access static members. Used for utility functions (e.g., Math.sqrt())."
       },
       {
         heading: "Static Blocks",
-        text: "Static initialization blocks run when the class is loaded. Used for static variable initialization."
+        text: "Run when class is loaded. Used for static variable initialization."
       },
       {
         heading: "Static Nested Classes",
-        text: "In Java, static inner classes can be instantiated without an outer instance. Non-static inner classes have a reference to outer."
+        text: "Can be instantiated without outer instance. Non-static inner classes have reference to outer."
       }
     ]
   },
@@ -140,19 +160,19 @@ export const oopsContent = {
       },
       {
         heading: "private",
-        text: "Accessible only within the same class. Used to hide internal implementation."
+        text: "Accessible only within same class. Hides internal implementation."
       },
       {
         heading: "protected",
-        text: "Accessible within the same package and by subclasses. Used for members meant for inheritance."
+        text: "Accessible within same package and by subclasses. Used for members meant for inheritance."
       },
       {
         heading: "default (package-private)",
-        text: "No modifier; accessible only within the same package. Used when we want limited visibility."
+        text: "No modifier. Accessible only within same package."
       },
       {
         heading: "Language Variations",
-        text: "C++ has public, private, protected (similar). Python uses naming conventions (single underscore for protected, double for private name mangling)."
+        text: "C++ has public, private, protected. Python uses naming conventions: _ for protected, __ for private name mangling."
       }
     ]
   },
@@ -161,15 +181,19 @@ export const oopsContent = {
     sections: [
       {
         heading: "Overloading",
-        text: "Same method name, different parameter lists (number, type, order). Return type can differ. Used for convenience (e.g., println(int), println(String))."
+        text: "Same method name, different parameter lists (number, type, order). Return type can differ. Compile-time binding."
       },
       {
         heading: "Overriding",
-        text: "Subclass provides a specific implementation of a method defined in superclass. Same name, parameters, return type (covariant allowed)."
+        text: "Subclass provides specific implementation. Same name, parameters, return type (covariant allowed). Runtime binding."
       },
       {
         heading: "Rules for Overriding",
-        text: "Access level cannot be more restrictive (can be less). Cannot throw broader checked exceptions. Use @Override annotation to avoid mistakes."
+        text: "Access level cannot be more restrictive. Cannot throw broader checked exceptions. Use @Override annotation."
+      },
+      {
+        heading: "Static Methods",
+        text: "Cannot be overridden (they are hidden)."
       }
     ]
   },
@@ -178,19 +202,23 @@ export const oopsContent = {
     sections: [
       {
         heading: "Declaration",
-        text: "Java: `interface MyInterface { void doSomething(); }`. A class implements it with `implements`."
+        text: "Java: `interface MyInterface { void doSomething(); }`. Class implements with `implements`."
       },
       {
         heading: "Multiple Inheritance of Type",
-        text: "A class can implement multiple interfaces, enabling a form of multiple inheritance without the diamond problem."
+        text: "Class can implement multiple interfaces. Avoids diamond problem."
       },
       {
         heading: "Default and Static Methods (Java 8+)",
-        text: "Default methods provide a default implementation in the interface, allowing evolution. Static methods are also allowed."
+        text: "Default methods provide default implementation. Static methods also allowed."
       },
       {
         heading: "Functional Interfaces",
-        text: "Interfaces with a single abstract method (SAM) are functional interfaces and can be used with lambda expressions (e.g., Runnable)."
+        text: "Single abstract method (SAM). Can be used with lambda expressions (e.g., Runnable)."
+      },
+      {
+        heading: "Marker Interfaces",
+        text: "No methods (e.g., Serializable)."
       }
     ]
   },
@@ -198,16 +226,20 @@ export const oopsContent = {
     title: "Abstract Classes",
     sections: [
       {
+        heading: "Definition",
+        text: "Cannot be instantiated. Meant to be subclassed. Can contain abstract methods (no body) and concrete methods."
+      },
+      {
         heading: "Purpose",
-        text: "Provide a common base with shared implementation, while enforcing subclasses to implement certain methods."
+        text: "Provide common base with shared implementation. Enforce subclasses to implement certain methods."
       },
       {
         heading: "Abstract Methods",
-        text: "Methods without body, marked abstract. Subclasses must override them (unless subclass is also abstract)."
+        text: "Methods without body, marked abstract. Subclasses must override (unless subclass also abstract)."
       },
       {
-        heading: "Use Cases",
-        text: "Template method pattern: define skeleton of algorithm with abstract steps. Also for code reuse among closely related classes."
+        heading: "Template Method Pattern",
+        text: "Define skeleton of algorithm with abstract steps."
       }
     ]
   },
@@ -216,19 +248,23 @@ export const oopsContent = {
     sections: [
       {
         heading: "Creation",
-        text: "Memory allocated, constructor called (or default initialization). In Java, `new` triggers this. In C++, object can be on stack or heap."
+        text: "Memory allocated, constructor called (or default initialization). Java: `new`. C++: stack or heap."
       },
       {
         heading: "Usage",
-        text: "During its lifetime, methods are called, fields are modified. The object remains referenced."
+        text: "Methods called, fields modified. Object remains referenced."
       },
       {
-        heading: "Garbage Collection (GC)",
-        text: "Languages with automatic GC (Java, C#, Python) reclaim memory when objects are no longer reachable. GC is non-deterministic."
+        heading: "Garbage Collection",
+        text: "Java, C#, Python: reclaims memory when objects no longer reachable. Non-deterministic."
       },
       {
         heading: "Destruction",
-        text: "In C++, destructors are called deterministically (stack unwinding, delete). In managed languages, finalizers are called before GC (not guaranteed)."
+        text: "C++: destructors called deterministically. Managed languages: finalizers called before GC (not guaranteed)."
+      },
+      {
+        heading: "try-with-resources",
+        text: "Java for explicit cleanup."
       }
     ]
   },
@@ -237,19 +273,23 @@ export const oopsContent = {
     sections: [
       {
         heading: "Try-Catch-Finally",
-        text: "Try block contains code that may throw exceptions. Catch handles specific exceptions. Finally executes regardless (cleanup)."
+        text: "Try: code that may throw exceptions. Catch: handles specific exceptions. Finally: executes regardless (cleanup)."
       },
       {
         heading: "Checked vs. Unchecked Exceptions",
-        text: "In Java, checked exceptions (IOException) must be handled or declared. Unchecked (RuntimeException) are optional."
+        text: "Java: checked (IOException) must be handled or declared. Unchecked (RuntimeException) are optional."
       },
       {
         heading: "Throwing and Custom Exceptions",
-        text: "Use `throw` to signal an exception. Custom exceptions extend Exception or RuntimeException, with constructors."
+        text: "Use `throw` to signal exception. Custom exceptions extend Exception or RuntimeException."
       },
       {
         heading: "Best Practices",
-        text: "Don't catch generic Exception unless necessary; catch specific exceptions. Use logging. Don't ignore exceptions."
+        text: "Don't catch generic Exception. Catch specific. Use logging. Don't ignore exceptions."
+      },
+      {
+        heading: "try-with-resources (Java 7+)",
+        text: "Auto-closes resources."
       }
     ]
   },
@@ -258,19 +298,23 @@ export const oopsContent = {
     sections: [
       {
         heading: "Generic Classes and Interfaces",
-        text: "Example: `class Box<T> { private T content; }`. T is a type parameter. Use with actual types: `Box<String> box = new Box<>();`"
+        text: "Example: `class Box<T> { private T content; }`. Use: `Box<String> box = new Box<>();`"
       },
       {
         heading: "Generic Methods",
-        text: "Methods can introduce their own type parameters. Example: `public static <T> T getMiddle(T... a) { ... }`"
+        text: "Methods introduce type parameters. Example: `public static <T> T getMiddle(T... a) { ... }`"
       },
       {
         heading: "Bounded Type Parameters",
-        text: "Restrict type parameters: `<T extends Number>` or `<T super Integer>` (super only for wildcards)."
+        text: "Restrict: `<T extends Number>` or `<T super Integer>` (super only for wildcards)."
       },
       {
         heading: "Wildcards",
-        text: "`?` unknown type. Upper bounded (`? extends T`), lower bounded (`? super T`), unbounded (`?`). Used for flexibility."
+        text: "`?` unknown type. Upper bounded (`? extends T`), lower bounded (`? super T`), unbounded (`?`)."
+      },
+      {
+        heading: "Type Erasure",
+        text: "Java generics are compile-time only. C++ templates generate separate code per type."
       }
     ]
   },
@@ -287,11 +331,15 @@ export const oopsContent = {
       },
       {
         heading: "Composition over Inheritance",
-        text: "Favor using composition (has-a) over inheritance (is-a) to achieve flexibility and reduce tight coupling."
+        text: "Favor composition (has-a) over inheritance (is-a) for flexibility and reduced coupling."
       },
       {
         heading: "Encapsulate What Varies",
-        text: "Identify aspects that change and separate them from the rest, so they can be altered without affecting other code."
+        text: "Identify aspects that change and separate them from the rest."
+      },
+      {
+        heading: "Dependency Injection",
+        text: "Common implementation of Dependency Inversion."
       }
     ]
   },
@@ -300,7 +348,7 @@ export const oopsContent = {
     sections: [
       {
         heading: "Creational Patterns",
-        text: "Singleton (ensure one instance), Factory (create objects without specifying concrete class), Abstract Factory, Builder, Prototype."
+        text: "Singleton (ensure one instance), Factory (create objects without concrete class), Abstract Factory, Builder, Prototype."
       },
       {
         heading: "Structural Patterns",
@@ -312,7 +360,7 @@ export const oopsContent = {
       },
       {
         heading: "Pattern Use",
-        text: "Choose patterns based on problem context. Overuse can lead to unnecessary complexity. Know when to apply."
+        text: "Choose based on problem context. Overuse leads to unnecessary complexity."
       }
     ]
   },
@@ -321,19 +369,23 @@ export const oopsContent = {
     sections: [
       {
         heading: "Shallow Copy",
-        text: "Copies primitive fields and references to objects. Changes to referenced objects affect both original and copy. In Java, `Object.clone()` does shallow copy."
+        text: "Copies primitive fields and object references. Changes to referenced objects affect both. Java `Object.clone()` does shallow copy."
       },
       {
         heading: "Deep Copy",
-        text: "Recursively copies all referenced objects, creating independent copies. Often done via serialization or custom copy constructors."
+        text: "Recursively copies all referenced objects. Via serialization or custom copy constructors."
       },
       {
         heading: "Cloning in Java",
-        text: "Implement `Cloneable` marker interface and override `clone()` to make it public. Use `super.clone()` then deep copy fields."
+        text: "Implement `Cloneable` and override `clone()` to make public. Use `super.clone()` then deep copy fields."
       },
       {
-        heading: "Copy Constructors and Factories",
-        text: "Alternative to `clone()`: copy constructor (e.g., `new Student(student)`) or static factory method, which are more flexible."
+        heading: "Copy Constructors",
+        text: "Alternative to `clone()`: `new Student(student)` or static factory method. More flexible."
+      },
+      {
+        heading: "Python copy",
+        text: "`copy.copy()` (shallow), `copy.deepcopy()` (deep)."
       }
     ]
   }

@@ -1,88 +1,12 @@
-// linuxSyllabus.js
 export const linuxSyllabus = [
-  {
-    id: 1,
-    topic: "Linux File System Hierarchy",
-    content: "Standard directories and their purposes (FHS)."
-  },
-  {
-    id: 2,
-    topic: "Linux Boot Process",
-    content: "BIOS, bootloader, kernel, init, and services."
-  },
-  {
-    id: 3,
-    topic: "Process Management in Linux",
-    content: "ps, top, kill, nice, and process states."
-  },
-  {
-    id: 4,
-    topic: "Linux Permissions and Ownership",
-    content: "chmod, chown, umask, and ACLs."
-  },
-  {
-    id: 5,
-    topic: "Shell Scripting Basics",
-    content: "Variables, conditionals, loops, and functions."
-  },
-  {
-    id: 6,
-    topic: "Package Management",
-    content: "APT, YUM, RPM, and dependency handling."
-  },
-  {
-    id: 7,
-    topic: "Systemd and Init Systems",
-    content: "Service management, targets, and units."
-  },
-  {
-    id: 8,
-    topic: "Linux Networking Commands",
-    content: "ifconfig, ping, netstat, ss, and iptables."
-  },
-  {
-    id: 9,
-    topic: "Linux Kernel Modules",
-    content: "Loading, unloading, and writing modules."
-  },
-  {
-    id: 10,
-    topic: "File System Types and Management",
-    content: "ext4, XFS, Btrfs, mount, and fsck."
-  },
-  {
-    id: 11,
-    topic: "User and Group Administration",
-    content: "useradd, usermod, groupadd, and /etc/passwd."
-  },
-  {
-    id: 12,
-    topic: "Linux Security and Firewall",
-    content: "SELinux, AppArmor, and iptables/nftables."
-  },
-  {
-    id: 13,
-    topic: "Cron and Scheduled Jobs",
-    content: "crontab, at, and systemd timers."
-  },
-  {
-    id: 14,
-    topic: "Linux I/O Redirection and Pipes",
-    content: "stdin, stdout, stderr, and piping commands."
-  },
-  {
-    id: 15,
-    topic: "Virtual Memory and Swapping",
-    content: "swap space, swapon, and /proc/meminfo."
-  },
-  {
-    id: 16,
-    topic: "Linux System Monitoring",
-    content: "top, htop, vmstat, iostat, and sar."
-  },
-  {
-    id: 17,
-    topic: "Logging and Journaling",
-    content: "syslog, journald, and log rotation."
-  }
+  { id: 1, topic: "What is the difference between a process and a thread?", content: "Process vs thread in Linux" },
+  { id: 2, topic: "Explain the Linux boot process step by step.", content: "BIOS → Bootloader → Kernel → Init/systemd" },
+  { id: 3, topic: "How do you check running processes and kill a process?", content: "ps, top, kill commands" },
+  { id: 4, topic: "Explain chmod 644. What do those numbers mean?", content: "File permissions and octal notation" },
+  { id: 5, topic: "What is the difference between an absolute and a relative path?", content: "Path types in Linux" },
+  { id: 6, topic: "How do you check disk space usage on Linux?", content: "df, du commands" },
+  { id: 7, topic: "What is the difference between hard link and soft link?", content: "ln command and inodes" },
+  { id: 8, topic: "How do you troubleshoot a slow Linux server?", content: "top, vmstat, iostat, netstat" },
+  { id: 9, topic: "What is the difference between cron and systemd timers?", content: "Scheduled job mechanisms" },
+  { id: 10, topic: "What is the purpose of the /etc/passwd and /etc/shadow files?", content: "User account management" }
 ];
