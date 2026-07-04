@@ -12,32 +12,12 @@ export default function Dashboard() {
     return { ...mod, total, completed, percent };
   });
 
-  const globalTotal = stats.reduce((sum, s) => sum + s.total, 0);
-  const globalCompleted = stats.reduce((sum, s) => sum + s.completed, 0);
-  const globalPercent = globalTotal > 0 ? Math.round((globalCompleted / globalTotal) * 100) : 0;
-
   return (
     <div className="module-container">
       <h2>Dashboard</h2>
-      <p className="module-desc">Track your interview preparation progress across all modules.</p>
-
-      <div className="dashboard-summary">
-        <div className="stat-card">
-          <span className="stat-value">{globalCompleted}/{globalTotal}</span>
-          <span className="stat-label">Topics Completed</span>
-        </div>
-        <div className="stat-card">
-          <span className="stat-value">{globalPercent}%</span>
-          <span className="stat-label">Overall Progress</span>
-        </div>
-        <div className="stat-card">
-          <span className="stat-value">{modules.length}</span>
-          <span className="stat-label">Active Modules</span>
-        </div>
-      </div>
-
-      <div className="progress-bar-container">
-        <div className="progress-bar" style={{ width: `${globalPercent}%` }} />
+      
+      <div className="insight-message">
+        <p>"Mastery is not measured by completion bars, but by comprehension. Focus on architectural understanding, build ruthlessly, and grasp the core mechanics."</p>
       </div>
 
       <h3 className="dashboard-section-title">Module Progress</h3>

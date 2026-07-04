@@ -32,7 +32,7 @@ export const modules = [
   { slug: 'express', label: 'Express.js', title: 'Express Preparation', description: 'REST APIs, middleware, routing.', syllabus: expressSyllabus, content: expressContent },
   { slug: 'mongodb', label: 'MongoDB', title: 'MongoDB Preparation', description: 'NoSQL, aggregation, Mongoose.', syllabus: mongoSyllabus, content: mongoContent },
   { slug: 'sql', label: 'SQL', title: 'SQL Preparation', description: 'Relational databases, queries, joins.', syllabus: sqlSyllabus, content: sqlContent },
-  // Add these new objects:
+  
   {
     slug: 'auth',
     label: 'Auth & Security',
@@ -49,7 +49,7 @@ export const modules = [
     syllabus: systemSyllabus,
     content: systemContent,
   },
-  // Add these objects inside the exported `modules` array:
+
   {
     slug: 'os',
     label: 'OS',

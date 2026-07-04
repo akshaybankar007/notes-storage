@@ -27,19 +27,15 @@ export default function ModulePage() {
       <div className="syllabus-grid">
         {module.syllabus.map((item) => (
           <article key={item.id} className={`topic-card${isCompleted(item.id) ? ' completed' : ''}`}>
-            <div className="topic-header">
+            <div className="topic-header" style={{ borderBottom: 'none', marginBottom: '15px', paddingBottom: '0' }}>
               <span className="topic-id">{item.id}.</span>
               <h3>{item.topic}</h3>
               {isCompleted(item.id) && <span className="checkmark" title="Completed">✓</span>}
             </div>
-            <div className="topic-body">
-              <strong>Concepts: </strong>
-              <p>{item.mustKnow}</p>
-            </div>
             <Link
               to={`/${module.slug}/${item.id}`}
               className="read-btn"
-              style={{ textAlign: 'center', textDecoration: 'none', display: 'block' }}
+              style={{ textAlign: 'center', textDecoration: 'none', display: 'block', marginTop: 'auto' }}
             >
               Read
             </Link>
