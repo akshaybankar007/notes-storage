@@ -33,7 +33,7 @@ export default function ModulePage() {
               {isCompleted(item.id) && <span className="checkmark" title="Completed">✓</span>}
             </div>
             <div className="topic-body">
-              <strong>Konw this:</strong>
+              <strong>Concepts: </strong>
               <p>{item.mustKnow}</p>
             </div>
             <Link

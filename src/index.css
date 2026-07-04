@@ -353,3 +353,15 @@ background-color: var(--bg-main);
   color: var(--text-secondary);
   white-space: nowrap;
 }
+.dashboard-link {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: 1px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.nav-divider {
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 15px 0;
+}

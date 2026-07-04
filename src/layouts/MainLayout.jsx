@@ -13,9 +13,12 @@ export default function MainLayout() {
         <aside className="sidebar">
           <h3>Modules</h3>
           <nav>
-            <NavLink to="/" end className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+            <NavLink to="/" end className={({ isActive }) => isActive ? 'nav-link dashboard-link active' : 'nav-link dashboard-link'}>
               Dashboard
             </NavLink>
+            
+            <div className="nav-divider"></div>
+            
             {modules.map((mod) => (
               <NavLink
                 key={mod.slug}

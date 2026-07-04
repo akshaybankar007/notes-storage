@@ -38,12 +38,12 @@ export default function TopicDetail() {
   return (
     <div className="module-container">
       <div className="topic-detail-header">
-        <Link to={`/${moduleSlug}`} className="back-link">← Back to Syllabus</Link>
+        <Link to={`/${moduleSlug}`} className="back-link">← Back</Link>
         <button
           className={`complete-btn${completed ? ' completed' : ''}`}
           onClick={() => toggleComplete(topicId)}
         >
-          {completed ? '✓ Marked Complete' : 'Mark as Complete'}
+          {completed ? '✓ Completed' : 'Mark as Complete'}
         </button>
       </div>
       <h2 style={{ marginTop: '20px' }}>{topic.title}</h2>
