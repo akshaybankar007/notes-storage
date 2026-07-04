@@ -3,7 +3,6 @@ import MainLayout from './layouts/MainLayout';
 import Dashboard from './pages/Dashboard';
 import ModulePage from './pages/ModulePage';
 import TopicDetail from './pages/TopicDetail';
-import './index.css';
 
 function App() {
   return (
@@ -16,4 +15,5 @@ function App() {
     </Routes>
   );
 }
+
 export default App;
