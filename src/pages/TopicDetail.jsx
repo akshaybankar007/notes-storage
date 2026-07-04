@@ -43,7 +43,7 @@ export default function TopicDetail() {
           className={`complete-btn${completed ? ' completed' : ''}`}
           onClick={() => toggleComplete(topicId)}
         >
-          {completed ? '✓ Completed' : 'Mark as Complete'}
+          {completed ? '✓ Completed' : 'Mark as Read'}
         </button>
       </div>
       <h2 style={{ marginTop: '20px' }}>{topic.title}</h2>

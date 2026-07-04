@@ -5,8 +5,9 @@ export default function MainLayout() {
   return (
     <div className="layout-container">
       <header className="app-header">
-        <h1>StackPrep</h1>
-        <p>Software Engineer & MERN Stack Readiness</p>
+        <h1>
+          <span>{'</>'}</span>Technical Interview & Full-Stack Engineering Guide
+        </h1>
       </header>
 
       <div className="content-wrapper">

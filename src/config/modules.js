@@ -48,6 +48,47 @@ export const modules = [
     description: 'Scaling, Load Balancers, Caching, CAP Theorem, and Microservices.',
     syllabus: systemSyllabus,
     content: systemContent,
+  },
+  // Add these objects inside the exported `modules` array:
+  {
+    slug: 'os',
+    label: 'OS',
+    title: 'Operating Systems',
+    description: 'Processes, Threads, Memory Management, and Concurrency.',
+    syllabus: [],
+    content: {},
+  },
+  {
+    slug: 'cn',
+    label: 'Networks',
+    title: 'Computer Networks',
+    description: 'OSI Model, TCP/IP, Protocols, and Routing Architecture.',
+    syllabus: [],
+    content: {},
+  },
+  {
+    slug: 'linux',
+    label: 'Linux',
+    title: 'Linux Fundamentals',
+    description: 'Commands, File Permissions, Bash Scripting, and Architecture.',
+    syllabus: [],
+    content: {},
+  },
+  {
+    slug: 'dbms',
+    label: 'DBMS',
+    title: 'Database Management Systems',
+    description: 'Normalization, ACID Properties, Transactions, and Relational Theory.',
+    syllabus: [],
+    content: {},
+  },
+  {
+    slug: 'oops',
+    label: 'OOPs',
+    title: 'Object-Oriented Programming',
+    description: 'Classes, Inheritance, Polymorphism, and Design Patterns.',
+    syllabus: [],
+    content: {},
   }
 ];
 
