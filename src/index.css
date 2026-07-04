@@ -318,40 +318,52 @@ background-color: var(--bg-main);
 }
 .dashboard-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
 }
 .dashboard-card {
-  background: var(--bg-card);
+background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 20px;
+  border-radius: 8px; /* Professional, sharper corners */
+  padding: 24px;
   text-decoration: none;
   color: inherit;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Professional smooth easing */
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
 }
 .dashboard-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   border-color: var(--accent-brandcolor);
-  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.5), 0 4px 8px -4px rgba(0, 0, 0, 0.3); /* Elegant depth shadow */
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.4);
 }
 .dashboard-card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
-.dashboard-card-header h4 { color: var(--accent-brandcolor); }
+.dashboard-card-header h4 { color: var(--text-main);
+  font-weight: 600; 
+  font-size: 1.2rem;
+}
 .dashboard-percent {
-  font-weight: bold;
+  font-weight: 700;
   color: var(--accent-brandcolor);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .dashboard-card-desc {
-  font-size: 0.85rem;
+font-size: 0.95rem;
   color: var(--text-secondary);
-  margin-bottom: 12px;
-  line-height: 1.4;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  flex-grow: 1;
+}
+.dashboard-count {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
 }
 .dashboard-card-progress {
   display: flex;

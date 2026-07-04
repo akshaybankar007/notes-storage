@@ -5,12 +5,26 @@ import { getAllProgress } from '../hooks/useProgress';
 export default function Dashboard() {
   const progress = getAllProgress();
 
+
+  const priorityOrder = {
+    'javascript': 1,
+    'java': 2,
+    'react': 3,
+    'node': 4,
+    'sql': 5,
+    'mongodb': 6,
+    'express': 7,
+
+    'html': 98,
+    'css': 99
+  };
+
   const stats = modules.map((mod) => {
     const total = mod.syllabus.length;
     const completed = progress[mod.slug]?.length ?? 0;
     const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
     return { ...mod, total, completed, percent };
-  });
+  }).sort((a, b) => (priorityOrder[a.slug] || 50) - (priorityOrder[b.slug] || 50));
 
   return (
     <div className="module-container">

@@ -16,11 +16,40 @@ import { mongoSyllabus } from '../data/mongoSyllabus';
 import { mongoContent } from '../data/mongoContent';
 import { sqlSyllabus } from '../data/sqlSyllabus';
 import { sqlContent } from '../data/sqlContent';
-// Add these imports:
+
+// Auth & Security (already existed)
 import { authSyllabus } from '../data/authSyllabus';
 import { authContent } from '../data/authContent';
+
+// System Design (already existed)
 import { systemSyllabus } from '../data/systemSyllabus';
 import { systemContent } from '../data/systemContent';
+
+// Newly generated modules:
+import { gitSyllabus } from '../data/gitSyllabus';
+import { gitContent } from '../data/gitContent';
+import { testingSyllabus } from '../data/testingSyllabus';
+import { testingContent } from '../data/testingContent';
+
+// Operating Systems (generated earlier)
+import { osSyllabus } from '../data/osSyllabus';
+import { osContent } from '../data/osContent';
+
+// Computer Networks (generated earlier)
+import { cnSyllabus } from '../data/cnSyllabus';
+import { cnContent } from '../data/cnContent';
+
+// Linux (generated earlier)
+import { linuxSyllabus } from '../data/linuxSyllabus';
+import { linuxContent } from '../data/linuxContent';
+
+// DBMS (generated earlier)
+import { dbmsSyllabus } from '../data/dbmsSyllabus';
+import { dbmsContent } from '../data/dbmsContent';
+
+// OOPs (generated earlier)
+import { oopsSyllabus } from '../data/oopsSyllabus';
+import { oopsContent } from '../data/oopsContent';
 
 export const modules = [
   { slug: 'java', label: 'Java', title: 'Java Preparation', description: 'Complete syllabus for Java.', syllabus: javaSyllabus, content: javaContent },
@@ -50,45 +79,64 @@ export const modules = [
     content: systemContent,
   },
 
+  // Newly added modules:
+  {
+    slug: 'git',
+    label: 'Git & GitHub',
+    title: 'Git & GitHub Fundamentals',
+    description: 'Version control, branching, merging, and collaboration workflows.',
+    syllabus: gitSyllabus,
+    content: gitContent,
+  },
+  {
+    slug: 'testing',
+    label: 'Testing',
+    title: 'Software Testing',
+    description: 'Unit, integration, E2E testing with Jest and React Testing Library.',
+    syllabus: testingSyllabus,
+    content: testingContent,
+  },
+
+  // Previously empty modules – now filled with generated content:
   {
     slug: 'os',
     label: 'OS',
     title: 'Operating Systems',
     description: 'Processes, Threads, Memory Management, and Concurrency.',
-    syllabus: [],
-    content: {},
+    syllabus: osSyllabus,
+    content: osContent,
   },
   {
     slug: 'cn',
     label: 'Networks',
     title: 'Computer Networks',
     description: 'OSI Model, TCP/IP, Protocols, and Routing Architecture.',
-    syllabus: [],
-    content: {},
+    syllabus: cnSyllabus,
+    content: cnContent,
   },
   {
     slug: 'linux',
     label: 'Linux',
     title: 'Linux Fundamentals',
     description: 'Commands, File Permissions, Bash Scripting, and Architecture.',
-    syllabus: [],
-    content: {},
+    syllabus: linuxSyllabus,
+    content: linuxContent,
   },
   {
     slug: 'dbms',
     label: 'DBMS',
     title: 'Database Management Systems',
     description: 'Normalization, ACID Properties, Transactions, and Relational Theory.',
-    syllabus: [],
-    content: {},
+    syllabus: dbmsSyllabus,
+    content: dbmsContent,
   },
   {
     slug: 'oops',
     label: 'OOPs',
     title: 'Object-Oriented Programming',
     description: 'Classes, Inheritance, Polymorphism, and Design Patterns.',
-    syllabus: [],
-    content: {},
+    syllabus: oopsSyllabus,
+    content: oopsContent,
   }
 ];
 
