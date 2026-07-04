@@ -1,13 +1,13 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --bg-main: #0f172a;       
-  --bg-card: #1e293b;       
-  --text-main: #f8fafc;     
-  --text-secondary: #94a3b8;    
-  --accent-brandcolor: #17b5dc;   
-  --accent-hover: #128ecc;  
-  --border-color: #334155;
+  --bg-main: #121212;       /* Deep soothing dark */
+  --bg-card: #1e1e1e;       /* Elevated dark card */
+  --text-main: #e0e0e0;     /* Soft white (less eye strain) */
+  --text-secondary: #a0a0a0;/* Soft gray */
+  --accent-brandcolor: #60a5fa; /* Calming professional blue */
+  --accent-hover: #3b82f6;  
+  --border-color: #2d2d2d;
 }
 
 body {
@@ -210,6 +210,7 @@ background-color: var(--bg-main);
   line-height: 1.6;
   color: var(--text-main);
   margin-bottom: 10px;
+  white-space: pre-wrap;
 }
 .code-block {
   background-color: #0b1120;
@@ -316,11 +317,12 @@ background-color: var(--bg-main);
   padding: 20px;
   text-decoration: none;
   color: inherit;
-  transition: transform 0.2s, border-color 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Professional smooth easing */
 }
 .dashboard-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-5px);
   border-color: var(--accent-brandcolor);
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.5), 0 4px 8px -4px rgba(0, 0, 0, 0.3); /* Elegant depth shadow */
 }
 .dashboard-card-header {
   display: flex;
