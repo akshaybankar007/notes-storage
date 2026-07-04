@@ -4,10 +4,6 @@ export const authContent = {
     title: "Authentication vs Authorization",
     sections: [
       {
-        heading: "Overview",
-        text: "Authentication verifies identity (who you are). Authorization determines permissions (what you can do)."
-      },
-      {
         heading: "Examples",
         text: "Login (authN) - you provide credentials. Then, access control (authZ) - you can access certain routes or resources."
       },
@@ -20,10 +16,6 @@ export const authContent = {
   "2": {
     title: "JWT (Structure + Refresh Tokens)",
     sections: [
-      {
-        heading: "Overview",
-        text: "JWT (JSON Web Token) is a stateless authentication token containing claims."
-      },
       {
         heading: "Structure",
         text: "Three parts: Header (algorithm, type), Payload (claims), Signature (HMAC or RSA). Base64Url encoded, concatenated with dots."
@@ -38,10 +30,6 @@ export const authContent = {
     title: "Sessions vs JWT",
     sections: [
       {
-        heading: "Overview",
-        text: "Sessions are server-side, storing user data in memory or DB. JWT is stateless, storing claims client-side."
-      },
-      {
         heading: "Sessions",
         text: "Server stores session ID, client stores cookie. Stateful, requires session store (e.g., Redis)."
       },
@@ -54,10 +42,6 @@ export const authContent = {
   "4": {
     title: "Cookies (HttpOnly, Secure, SameSite)",
     sections: [
-      {
-        heading: "Overview",
-        text: "Cookies are small data stored in the browser and sent with requests."
-      },
       {
         heading: "HttpOnly",
         text: "Prevents JavaScript access, mitigating XSS. Should be set for session cookies."
@@ -76,10 +60,6 @@ export const authContent = {
     title: "Bcrypt (Password Hashing, Salt Rounds)",
     sections: [
       {
-        heading: "Overview",
-        text: "Bcrypt is a password hashing function designed to be slow and resistant to brute-force."
-      },
-      {
         heading: "Salt",
         text: "A random string added to each password before hashing, preventing rainbow table attacks."
       },
@@ -92,10 +72,6 @@ export const authContent = {
   "6": {
     title: "CORS (Cross-Origin Resource Sharing)",
     sections: [
-      {
-        heading: "Overview",
-        text: "CORS is a browser security mechanism that restricts cross-origin requests."
-      },
       {
         heading: "How It Works",
         text: "Browser sends preflight OPTIONS request for non-simple requests. Server responds with Access-Control-Allow-* headers."
@@ -110,10 +86,6 @@ export const authContent = {
     title: "XSS (Cross-Site Scripting) and Prevention",
     sections: [
       {
-        heading: "Overview",
-        text: "XSS injects malicious scripts into web pages, executed in users' browsers."
-      },
-      {
         heading: "Types",
         text: "Stored (database), Reflected (URL parameter), DOM-based (client-side)."
       },
@@ -126,10 +98,6 @@ export const authContent = {
   "8": {
     title: "CSRF (Cross-Site Request Forgery) and Prevention",
     sections: [
-      {
-        heading: "Overview",
-        text: "CSRF tricks a user into performing unwanted actions on a site where they are authenticated."
-      },
       {
         heading: "Prevention",
         text: "Anti-CSRF tokens (synchronizer tokens), SameSite cookies (Lax/Strict), and checking Referer header."
@@ -144,10 +112,6 @@ export const authContent = {
     title: "SQL Injection and Prevention",
     sections: [
       {
-        heading: "Overview",
-        text: "SQL injection occurs when user input is concatenated into SQL queries, allowing malicious SQL execution."
-      },
-      {
         heading: "Prevention",
         text: "Use parameterized queries (prepared statements) or ORM frameworks. Validate and sanitize input."
       },
@@ -160,10 +124,6 @@ export const authContent = {
   "10": {
     title: "Rate Limiting & Helmet.js",
     sections: [
-      {
-        heading: "Overview",
-        text: "Rate limiting controls request frequency to prevent abuse. Helmet.js sets security HTTP headers."
-      },
       {
         heading: "Rate Limiting",
         text: "Implement with express-rate-limit (Node.js). Limits per IP or user; helps against brute-force and DDoS."

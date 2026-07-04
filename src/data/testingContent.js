@@ -4,10 +4,6 @@ export const testingContent = {
     title: "What is Testing? (Why do we need it?)",
     sections: [
       {
-        heading: "Overview",
-        text: "Testing verifies that software behaves as expected, catches bugs, and improves quality."
-      },
-      {
         heading: "Benefits",
         text: "Reduces costs, increases confidence in refactoring, documents expected behavior, and catches regression."
       },
@@ -20,10 +16,6 @@ export const testingContent = {
   "2": {
     title: "Unit Testing vs Integration Testing vs End-to-End Testing",
     sections: [
-      {
-        heading: "Overview",
-        text: "These tests differ in scope and granularity."
-      },
       {
         heading: "Unit Testing",
         text: "Tests individual components (functions, classes) in isolation. Fast, easy to write."
@@ -42,10 +34,6 @@ export const testingContent = {
     title: "Jest Basics (Installation, Matchers, Assertions)",
     sections: [
       {
-        heading: "Overview",
-        text: "Jest is a popular JavaScript testing framework, often used with React."
-      },
-      {
         heading: "Installation",
         text: "`npm install --save-dev jest` and configure scripts in package.json."
       },
@@ -63,10 +51,6 @@ export const testingContent = {
     title: "Test Suites and Test Cases",
     sections: [
       {
-        heading: "Overview",
-        text: "Test suites group related test cases using `describe` blocks."
-      },
-      {
         heading: "describe",
         text: "Creates a block for a set of tests. Useful for organization."
       },
@@ -79,10 +63,6 @@ export const testingContent = {
   "5": {
     title: "Mock Functions and Mocking",
     sections: [
-      {
-        heading: "Overview",
-        text: "Mocks replace dependencies to isolate the unit being tested."
-      },
       {
         heading: "jest.fn()",
         text: "Creates a mock function. Can track calls and return values."
@@ -101,10 +81,6 @@ export const testingContent = {
     title: "Asynchronous Testing",
     sections: [
       {
-        heading: "Overview",
-        text: "Testing async code requires handling Promises and callbacks."
-      },
-      {
         heading: "Promises",
         text: "Return a promise from the test. Jest waits for it to resolve or reject."
       },
@@ -121,10 +97,6 @@ export const testingContent = {
   "7": {
     title: "React Testing Library (RTL) Basics",
     sections: [
-      {
-        heading: "Overview",
-        text: "RTL encourages testing user interactions by querying the DOM as a user would."
-      },
       {
         heading: "Setup",
         text: "Install `@testing-library/react` and `@testing-library/jest-dom` for custom matchers."
@@ -143,10 +115,6 @@ export const testingContent = {
     title: "Testing User Interactions",
     sections: [
       {
-        heading: "Overview",
-        text: "Simulate user events to test component behavior."
-      },
-      {
         heading: "fireEvent",
         text: "Synchronous events: `fireEvent.click(button)`, `fireEvent.change(input, {target: {value: 'text'}})`."
       },
@@ -159,10 +127,6 @@ export const testingContent = {
   "9": {
     title: "Mocking API Calls and Components",
     sections: [
-      {
-        heading: "Overview",
-        text: "Mock external dependencies to avoid hitting real APIs or to isolate component tests."
-      },
       {
         heading: "Mocking API calls",
         text: "Use `jest.spyOn` on fetch/axios, or mock the module with `jest.mock('axios')`."

@@ -4,10 +4,6 @@ export const gitContent = {
     title: "Git vs GitHub (Differences)",
     sections: [
       {
-        heading: "Overview",
-        text: "Git is a distributed version control system that tracks changes in source code. GitHub is a cloud-based hosting service for Git repositories with collaboration features."
-      },
-      {
         heading: "Key Differences",
         text: "Git is a tool; GitHub is a platform. Git operates locally; GitHub adds a remote server for sharing. GitHub provides UI, issue tracking, PRs, and CI/CD."
       },
@@ -20,10 +16,6 @@ export const gitContent = {
   "2": {
     title: "Basic Commands",
     sections: [
-      {
-        heading: "Overview",
-        text: "Essential Git commands for daily version control operations."
-      },
       {
         heading: "Clone, Add, Commit",
         text: "`git clone <url>` copies a remote repository. `git add <file>` stages changes. `git commit -m 'message'` saves staged changes to local history."
@@ -38,10 +30,6 @@ export const gitContent = {
     title: "Branching",
     sections: [
       {
-        heading: "Overview",
-        text: "Branches allow parallel development and isolation of features."
-      },
-      {
         heading: "Creating and Switching",
         text: "`git branch <name>` creates a branch. `git switch <branch>` or `git checkout <branch>` moves to it."
       },
@@ -54,10 +42,6 @@ export const gitContent = {
   "4": {
     title: "Merging vs Rebasing",
     sections: [
-      {
-        heading: "Overview",
-        text: "Both integrate changes from one branch to another, but with different results."
-      },
       {
         heading: "Merging",
         text: "Creates a new merge commit, preserving history as is. Non-destructive, shows branch splits."
@@ -76,10 +60,6 @@ export const gitContent = {
     title: "Resolving Merge Conflicts",
     sections: [
       {
-        heading: "Overview",
-        text: "Conflicts occur when the same lines are changed in different branches."
-      },
-      {
         heading: "Resolution Process",
         text: "Git marks conflicts in files with `<<<<<<<`, `=======`, `>>>>>>>`. Manually edit, then `git add` and `git commit` to resolve."
       },
@@ -92,10 +72,6 @@ export const gitContent = {
   "6": {
     title: "Git Workflows",
     sections: [
-      {
-        heading: "Overview",
-        text: "Workflows define branching and release strategies for teams."
-      },
       {
         heading: "Git Flow",
         text: "Uses `develop`, `feature`, `release`, `hotfix` branches. Structured but complex. Suitable for projects with scheduled releases."
@@ -110,10 +86,6 @@ export const gitContent = {
     title: "Stashing",
     sections: [
       {
-        heading: "Overview",
-        text: "Stashing saves uncommitted changes temporarily without committing."
-      },
-      {
         heading: "Commands",
         text: "`git stash` saves changes. `git stash pop` applies and removes the stash. `git stash apply` applies but keeps it."
       },
@@ -126,10 +98,6 @@ export const gitContent = {
   "8": {
     title: "Undoing Changes",
     sections: [
-      {
-        heading: "Overview",
-        text: "Different commands to revert or reset changes."
-      },
       {
         heading: "git reset",
         text: "Moves the current branch pointer. `--soft` keeps changes staged; `--mixed` unstages; `--hard` discards changes (dangerous)."
@@ -148,10 +116,6 @@ export const gitContent = {
     title: "Remote Repositories",
     sections: [
       {
-        heading: "Overview",
-        text: "Remote repositories are copies of the project hosted elsewhere."
-      },
-      {
         heading: "origin and upstream",
         text: "`origin` is the default remote (your fork). `upstream` is the original repository (often used for open source)."
       },
@@ -164,10 +128,6 @@ export const gitContent = {
   "10": {
     title: "Pull Requests and Code Reviews",
     sections: [
-      {
-        heading: "Overview",
-        text: "Pull Requests (PRs) allow proposing changes and requesting review before merging."
-      },
       {
         heading: "PR Workflow",
         text: "Push a branch, open a PR on GitHub. Reviewers comment, request changes. Once approved, merge into main."
